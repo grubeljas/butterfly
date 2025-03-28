@@ -1,0 +1,10 @@
+Hii
+Greeting mortal!
+Do you know why are you  here?
+[clear time="1.0"]
+-  | [if {YES} > 0.0] [else="disable" alt_text="Yes"]
+	set {YES} -= 1.0
+	Good
+-  | [if {NO} > 0.0] [else="disable" alt_text="No"]
+	set {NO} -= 1.0
+	Let me explain

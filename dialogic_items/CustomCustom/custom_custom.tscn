@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7n70guyj76lt"]
+
+[ext_resource type="Script" uid="uid://c7w483a1pipe8" path="res://dialogic_items/CustomCustom/default_layout_base.gd" id="1_ifsho"]
+[ext_resource type="PackedScene" uid="uid://bxmp0s6ou2vqt" path="res://dialogic_items/CenteredChoices/custom_centered_choices.tscn" id="4_m47rl"]
+
+[node name="Custom" type="CanvasLayer"]
+script = ExtResource("1_ifsho")
+
+[node name="VN_ChoiceLayer" parent="." instance=ExtResource("4_m47rl")]
+apply_overrides_on_ready = true

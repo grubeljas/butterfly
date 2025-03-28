@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=10 format=3 uid="uid://84kehwprb7v2"]
+
+[ext_resource type="Script" uid="uid://dbjk4fnphv6c" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_ksp3t"]
+[ext_resource type="PackedScene" uid="uid://b7n70guyj76lt" path="res://dialogic_items/CustomCustom/custom_custom.tscn" id="1_o520x"]
+[ext_resource type="PackedScene" uid="uid://cto7kinugdteq" path="res://dialogic_items/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="2_3j7kp"]
+[ext_resource type="Script" uid="uid://bp1eny6082k5r" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_cc7eh"]
+[ext_resource type="PackedScene" uid="uid://bxmp0s6ou2vqt" path="res://dialogic_items/CenteredChoices/custom_centered_choices.tscn" id="3_3j7kp"]
+
+[sub_resource type="Resource" id="Resource_3j7kp"]
+script = ExtResource("1_ksp3t")
+scene = ExtResource("1_o520x")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_o520x"]
+script = ExtResource("1_ksp3t")
+scene = ExtResource("3_3j7kp")
+overrides = {
+"text_color_custom": "Color(0.972549, 0.976471, 0.94902, 1)",
+"text_color_disabled": "Color(0.972549, 0.976471, 0.94902, 1)",
+"text_color_focused": "Color(0.972549, 0.976471, 0.94902, 1)",
+"text_color_hovered": "Color(0.972549, 0.976471, 0.94902, 1)",
+"text_color_pressed": "Color(0.972549, 0.976471, 0.94902, 1)"
+}
+
+[sub_resource type="Resource" id="Resource_ge8yu"]
+script = ExtResource("1_ksp3t")
+scene = ExtResource("2_3j7kp")
+overrides = {
+"box_margin_bottom": "0.0",
+"box_size": "Vector2(580, 500)",
+"normal_font": "\"res://assets/StandardGalacticAlphabet-Regular.ttf\"",
+"text_alignment": "1",
+"text_custom_color": "Color(0.766954, 0.769531, 0.751495, 0.647059)",
+"text_size": "32.0",
+"text_use_global_color": "false",
+"text_use_global_font": "false",
+"text_use_global_size": "false"
+}
+
+[sub_resource type="Resource" id="Resource_f66vh"]
+script = ExtResource("1_ksp3t")
+scene = ExtResource("2_3j7kp")
+overrides = {
+"box_size": "Vector2(800, 500)",
+"normal_font": "\"res://assets/HelveticaNeue.ttf\"",
+"text_alignment": "1",
+"text_custom_color": "Color(0.972549, 0.976471, 0.94902, 1)",
+"text_size": "60.0",
+"text_use_global_color": "false",
+"text_use_global_font": "false",
+"text_use_global_size": "false"
+}
+
+[resource]
+script = ExtResource("2_cc7eh")
+name = "custom"
+layer_list = Array[String](["11", "13", "12"])
+layer_info = {
+"": SubResource("Resource_3j7kp"),
+"11": SubResource("Resource_o520x"),
+"12": SubResource("Resource_ge8yu"),
+"13": SubResource("Resource_f66vh")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_ksp3t")]([])
+metadata/_latest_layer = "13"

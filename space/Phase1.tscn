@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0wttqhet0575"]
+
+[ext_resource type="Shader" uid="uid://v1xpu43cga7d" path="res://space/Phase1.gdshader" id="1_b5qyd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ttij0"]
+shader = ExtResource("1_b5qyd")
+shader_parameter/polar_coordinates = true
+shader_parameter/polar_center = Vector2(0.5, 0.5)
+shader_parameter/polar_zoom = -1.0
+shader_parameter/polar_repeat = 3.0
+shader_parameter/spin_rotation = 17.0
+shader_parameter/spin_speed = 40.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.1764, 0.231653, 0.28, 1)
+shader_parameter/colour_2 = Color(0.0183333, 0, 0.1, 1)
+shader_parameter/colour_3 = Color(0, 0, 0, 1)
+shader_parameter/contrast = -2.0
+shader_parameter/spin_amount = 0.36
+shader_parameter/pixel_filter = 300.0
+
+[node name="Phase1" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_ttij0")
+offset_right = 1151.0
+offset_bottom = 648.0
+color = Color(0.454124, 1, 0.864125, 1)
