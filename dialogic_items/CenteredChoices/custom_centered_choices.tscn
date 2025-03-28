@@ -1,12 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxmp0s6ou2vqt"]
+[gd_scene load_steps=12 format=3 uid="uid://bxmp0s6ou2vqt"]
 
 [ext_resource type="Script" uid="uid://b11k23wsfcep0" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.gd" id="1_kurgw"]
 [ext_resource type="Script" uid="uid://c81hgjhb1jn1m" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="1_w632k"]
 [ext_resource type="StyleBox" uid="uid://calfs4qcas2qr" path="res://dialogic_items/yes.tres" id="2_mdh3n"]
 [ext_resource type="Script" uid="uid://lywp4fexbmg0" path="res://addons/dialogic/Modules/Choice/node_button_sound.gd" id="2_mgko6"]
+[ext_resource type="StyleBox" uid="uid://cnkuur4nahs3t" path="res://dialogic_items/yes_disabled.tres" id="3_hrgrj"]
 [ext_resource type="AudioStream" uid="uid://b6c1p14bc20p1" path="res://addons/dialogic/Example Assets/sound-effects/typing1.wav" id="3_mql8i"]
 [ext_resource type="AudioStream" uid="uid://c2viukvbub6v6" path="res://addons/dialogic/Example Assets/sound-effects/typing4.wav" id="4_420fr"]
 [ext_resource type="StyleBox" uid="uid://da7x8gu0xnlow" path="res://dialogic_items/no.tres" id="4_hs5gv"]
+[ext_resource type="StyleBox" uid="uid://0dcjxxh1rlg" path="res://dialogic_items/no_disabled.tres" id="6_vm7xm"]
+[ext_resource type="StyleBox" uid="uid://boc15i34ih4mj" path="res://dialogic_items/no_hover.tres" id="7_vli6a"]
 
 [sub_resource type="AudioStream" id="AudioStream_pe27w"]
 
@@ -47,10 +50,11 @@ offset_right = 708.0
 offset_bottom = 703.0
 scale = Vector2(0.5, 0.5)
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 theme_override_styles/focus = ExtResource("2_mdh3n")
-theme_override_styles/disabled = ExtResource("2_mdh3n")
-theme_override_styles/hover = ExtResource("2_mdh3n")
-theme_override_styles/pressed = ExtResource("2_mdh3n")
+theme_override_styles/disabled = ExtResource("3_hrgrj")
+theme_override_styles/hover = ExtResource("3_hrgrj")
+theme_override_styles/pressed = ExtResource("3_hrgrj")
 theme_override_styles/normal = ExtResource("2_mdh3n")
 script = ExtResource("1_w632k")
 
@@ -63,9 +67,10 @@ offset_right = 1028.0
 offset_bottom = 703.0
 scale = Vector2(0.5, 0.5)
 size_flags_horizontal = 3
-theme_override_styles/disabled = ExtResource("4_hs5gv")
-theme_override_styles/hover = ExtResource("4_hs5gv")
-theme_override_styles/pressed = ExtResource("4_hs5gv")
+mouse_default_cursor_shape = 2
+theme_override_styles/disabled = ExtResource("6_vm7xm")
+theme_override_styles/hover = ExtResource("7_vli6a")
+theme_override_styles/pressed = ExtResource("7_vli6a")
 theme_override_styles/normal = ExtResource("4_hs5gv")
 script = ExtResource("1_w632k")
 

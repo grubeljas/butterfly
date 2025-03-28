@@ -27,8 +27,7 @@ extends Button
 
 func _ready() -> void:
 	add_to_group('dialogic_choice_button')
-	shortcut_in_tooltip = false
-	hide()
+	visible = false
 
 
 func _load_info(choice_info: Dictionary) -> void:
